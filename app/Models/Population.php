@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Population extends Model
 {
-    use HasFactory;
+    protected $table = 'population';
+    /**
+     * Attributes that are mass assignable
+     * 
+     * @var array
+     */
+    protected $fillable = [
+        'id_nation', 'nation', 'id_year', 'year', 'population',
+        'slug_nation'
+    ];
 }

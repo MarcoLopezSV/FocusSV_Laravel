@@ -14,7 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('populations', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('id_nation');
+            $table->string('nation');
+            $table->string('id_year');
+            $table->string('year');
+            $table->string('population');
+            $table->string('slug_nation');
             $table->timestamps();
         });
     }
