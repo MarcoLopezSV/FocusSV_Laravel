@@ -45,6 +45,14 @@ class PopulationController extends Controller
     public function store(Request $request)
     {
         //
+        $population = new Population;
+        $population->id_nation = $request->id_nation;
+        $population->nation = $request->nation;
+        $population->id_year = $request->id_year;
+        $population->year = $request->year;
+        $population->population = $request->population;
+        $population->slug_nation = $request->slug_nation;
+        $population->save();
     }
 
     /**
