@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Population;
+use App\Models\User;
+use App\Http\Controllers\ChartController;
+use App\Http\Controllers\PopulationController;
+use App\Http\Controllers\HighchartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/chart', [HighchartController::class, 'handleChart']);
+Route::get('list', [PeopleController::class,'show']);
+Route::get('/index', [ChartController::class,'handleChart']);
