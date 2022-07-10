@@ -4,36 +4,30 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>Laravel Focus SV</title>
   </head>
-  <body>
-    <h1>People List</h1>
+  <body style="background-color: #f3e6e8;">
+    <h2 style="text-align: center ;">People List</h2>
+    <p style="text-align:center "> Table filled with data from the DB made in Localhost</p>
     <table class='table table-bordered' style="margin:50px">
     <thead class="thead-dark">
     <tr>
         <th>id</th>
-        <td>id_nation</td>
         <th>nation</th>
-        <td>id_year</td>
         <th>year</th>
         <th>population</th>
-        <td>slug_nation</td>
     </tr>
     </thead>
     @foreach($data as $dat)
     <tbody>
     <tr>
         <td>{{$dat ['id']}}</td>
-        <td>{{$dat ['id_nation']}}</td>
         <td>{{$dat ['nation']}}</td>
-        <td>{{$dat ['id_year']}}</td>
         <td>{{$dat ['year']}}</td>
         <td>{{$dat ['population']}}</td>
-        <td>{{$dat ['slug_nation']}}</td>
     </tr>
     </tbody>
     @endforeach
