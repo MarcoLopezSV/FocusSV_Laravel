@@ -2,10 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>Laravel Highcharts </title>
+    <title>Laravel Highcharts Test </title>
 </head>
 <body>
-    <h1>Highcharts in Laravel </h1>
+    <h1>Highcharts in Laravel Test with User data </h1>
     <div id="container"></div>
 </body>
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -13,7 +13,7 @@
     var userData = <?php echo json_encode($userData)?>;
     Highcharts.chart('container', {
         title: {
-            text: 'New User Growth, 2020'
+            text: 'User Growt, 2020'
         },
         subtitle: {
             text: 'test'
@@ -49,7 +49,7 @@
                 },
                 chartOptions: {
                     legend: {
-                        layout: 'horizontal',
+                        layout: 'vertical',
                         align: 'center',
                         verticalAlign: 'bottom'
                     }

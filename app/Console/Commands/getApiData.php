@@ -32,7 +32,6 @@ class getApiData extends Command
         //variable to store all the data from api using GET method
         $data = Http::get("https://datausa.io/api/data?drilldowns=Nation&measures=Population");
         //return it temporarily into the view decoded as json
-        return view("data", [ "data" => json_decode($data)]);
-        
+        return view("data", [ "data" => json_decode($data)]); 
     }
 }
