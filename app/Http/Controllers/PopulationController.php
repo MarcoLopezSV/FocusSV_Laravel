@@ -61,9 +61,11 @@ class PopulationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+        $data =  Population::all();
+        return view('list', ['data' => $data]);
     }
 
     /**
@@ -99,4 +101,5 @@ class PopulationController extends Controller
     {
         //
     }
+
 }

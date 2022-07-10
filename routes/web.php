@@ -22,5 +22,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/chart', [HighchartController::class, 'handleChart']);
-Route::get('list', [PeopleController::class,'show']);
+Route::get('list', [PopulationController::class,'show']);
 Route::get('/index', [ChartController::class,'handleChart']);
