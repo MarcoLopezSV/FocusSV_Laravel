@@ -3,7 +3,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <head>
     <meta charset="utf-8">
-    <title>Laravel Charts </title>
+    <title>Laravel Charts using Chart JS </title>
 </head>
 <body>
     <h1>Charts of the Population of the US </h1>
